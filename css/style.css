@@ -1,0 +1,112 @@
+@import 'https://fonts.googleapis.com/css?family=Assistant:300,400,600,700,800';
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Assistant', sans-serif;
+    background: #f1f4f4;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+.header-with-image{
+    height: 90vh;
+    background: #000000;
+}
+
+.top-menu-logo-area{
+    padding: 20px 0;
+    height: 60px;
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    margin: 25px 15px 0 15px;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    font-size: 0.7em;
+}
+
+nav a:hover,
+nav a:focus {
+    outline: none;
+}
+
+/* Effect 13: three circles */
+.cl-effect-13 a {
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+/*.cl-effect-13 a::before {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    color: transparent;
+    content: '•';
+    text-shadow: 0 0 transparent;
+    font-size: 1em;
+    -webkit-transition: text-shadow 0.3s, color 0.3s;
+    -moz-transition: text-shadow 0.3s, color 0.3s;
+    transition: text-shadow 0.3s, color 0.3s;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    pointer-events: none;
+}*/
+
+.cl-effect-13 a:hover::before,
+.cl-effect-13 a:focus::before {
+    color: #fff;
+    text-shadow: 10px 0 #fff, -10px 0 #fff;
+}
+
+.cl-effect-13 a:hover,
+.cl-effect-13 a:focus {
+    color: #5cb85c;
+}
+
+.menu-right-area > nav{
+    float: right;
+}
+
+.login-profile-area > a.btn{
+    margin: 15px 0 0 5px;
+}
+
+.login-profile-area > a.btn {
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+.login-profile-area > a.btn {
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    transition: background 0.3s;
+}
+
+.slider-text{
+    padding-top: 20%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.slider-text h6{
+    line-height: 28px !important;
+}
